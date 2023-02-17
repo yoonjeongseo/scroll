@@ -3,10 +3,16 @@ section > div {position: relative; width: 100%; height: 100vh;}
 section h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 10vw;}
 
 .sec1 {height: 200vh;}
-.sec1 ul {display: flex; flex-direction: column; justify-content: center;}
-section li {font-size: 12vw; font-weight: 700; white-space: nowrap;}
-.sec2 {height: 300vh;}
+.sec1 ul {display: flex; flex-direction: column; justify-content: center; overflow: hidden;}
+section li {font-size: 8vw; font-weight: 700; white-space: nowrap;}
+.sec2 {height: 250vh; overflow: hidden;}
 .sec2  > ul {display: block; width: 100%; height: 200vh; overflow: hidden;}
-.sec3 {height: 900vh;}
-.sec3 li {height: 100vh; font-size: 10vw; font-weight: 700;}
 .sec2 li span {background-color: #fff;}
+/* .sec3 {height: 500vh;} */
+.sec3 .left {display: flex;}
+.sec3 li {min-width: 100vw; height: 100vh; font-size: 10vw; font-weight: 700;}
+.sec3 .left li:nth-child(2) {color: #fff; background-color: pink;}
+.sec3 .left li:nth-child(4) {color: #fff; background-color: pink;}
+.sec3 .top .move1 {color: #fff; background-color: yellow;}
+.sec3 .top .move2 {color: #fff; background-color: red;}
+.sec3 .top .move3 {color: #fff; background-color: yellow;}
