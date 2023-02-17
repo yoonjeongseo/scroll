@@ -1,0 +1,12 @@
+section {width: 100%;}
+section > div {position: relative; width: 100%; height: 100vh;}
+section h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 10vw;}
+
+.sec1 {height: 200vh;}
+.sec1 ul {display: flex; flex-direction: column; justify-content: center;}
+section li {font-size: 12vw; font-weight: 700; white-space: nowrap;}
+.sec2 {height: 300vh;}
+.sec2  > ul {display: block; width: 100%; height: 200vh; overflow: hidden;}
+.sec3 {height: 900vh;}
+.sec3 li {height: 100vh; font-size: 10vw; font-weight: 700;}
+.sec2 li span {background-color: #fff;}
