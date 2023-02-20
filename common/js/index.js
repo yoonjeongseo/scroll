@@ -22,13 +22,13 @@ $(function(){
   });
 
   //sec2
-  gsap.set(".sec2 .type1", {xPercent: 50, yPercent: 200, rotation: 140});
+  gsap.set(".sec2 .type1", {xPercent: 70, yPercent: 500, rotation: 140});
   gsap.set(".sec2 .type2", {xPercent: -35, yPercent: 1600, rotation: -75});
   gsap.set(".sec2 .type3", {xPercent: -40, yPercent: -400, rotation: 70});
-  gsap.set(".sec2 .type4", {xPercent: 30, yPercent: 800, rotation: -150});
-  gsap.set(".sec2 .type5", {xPercent: -70, yPercent: 600, rotation: -10});
+  gsap.set(".sec2 .type4", {xPercent: 30, yPercent: 500, rotation: -150});
+  gsap.set(".sec2 .type5", {xPercent: -70, yPercent: 400, rotation: -10});
 
-  gsap.to(".sec2 .type1", {xPercent: 30, yPercent: 100,
+  gsap.to(".sec2 .type1", {xPercent: 30, yPercent: 0,
     scrollTrigger: {
       trigger: ".sec2",
       start: "top top",
@@ -55,7 +55,7 @@ $(function(){
       // markers: true
     }
   });
-  gsap.to(".sec2 .type4", {xPercent: 50, yPercent: 400,
+  gsap.to(".sec2 .type4", {xPercent: 50, yPercent: 300,
     scrollTrigger: {
       trigger: ".sec2",
       start: "30% top",
@@ -82,7 +82,6 @@ $(function(){
 			end: "+=300%",
 			scrub: 1,
       pin: ".sec3 .left",
-      // pinSpacing: false,
       // markers: true
 		},
   })
@@ -90,22 +89,6 @@ $(function(){
 		xPercent: -302,
 		ease: "power1.in",
 	});
-
-  // pannelTopTl = gsap.timeline({
-  //   scrollTrigger: {
-	// 		trigger: ".sec3 .top",
-	// 		start: "0 0%",
-	// 		// end: "+=100%",
-	// 		scrub: 1,
-  //     pin: ".sec3 .top",
-  //     pinSpacing: false,
-  //     markers: true
-	// 	},
-  // })
-  // pannelTopTl.to(".sec3 .top .move1", {yPercent: -100})
-  // .to(".sec3 .top .move2", {yPercent: -200})
-  // .to(".sec3 .top .move3", {yPercent: -300})
-  // .to(".sec3 .top .move4", {yPercent: -400});
 
   pannel = gsap.utils.toArray(".sec3 .top li");
   pannel.forEach(pannel => {
@@ -115,7 +98,7 @@ $(function(){
         pinSpacing: false,
         trigger: pannel,
         start: "top top",
-        markers: true,
+        // markers: true,
       }
     })
   })
